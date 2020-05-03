@@ -73,11 +73,3 @@ namespace DHT11 {
     }
 }
 
-function showDHT11Data() {
-    DHT11.measureData(DigitalPin.P0, false)
-    if (DHT11.readDataSuccessful()) {
-        let temperature = DHT11.readData(DHT11.MeasureType.Temperature)
-        let humidity = DHT11.readData(DHT11.MeasureType.Humidity)
-        basic.showString(`T: ${temperature}*C - H: ${humidity}%`)
-    }
-}
