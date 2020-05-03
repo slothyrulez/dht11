@@ -81,17 +81,3 @@ function showDHT11Data() {
         basic.showString(`T: ${temperature}*C - H: ${humidity}%`)
     }
 }
-
-
-images.createImage(`
-. . . . .
-. . . . .
-. . # . .
-. . . . .
-. . . . .
-`).showImage(0)
-
-while (true) {
-    basic.pause(1000)
-    showDHT11Data()
-}
